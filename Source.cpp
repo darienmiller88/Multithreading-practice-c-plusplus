@@ -34,12 +34,6 @@ void hello() {
 	cout << "hello" << endl;
 }
 
-template<typename T, typename ...Args>
-void print(const T &t, const Args &...x) {
-	std::cout << t << " "; 
-	print(x...);
-}
-
 int main() {
 	const long long int SIZE = 9000000L;
 	vector<int> nums(SIZE * 2);
